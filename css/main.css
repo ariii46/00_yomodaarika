@@ -1,0 +1,454 @@
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    
+    line-height: 1.75;
+    font-size: 16px;
+    max-width: 960px;
+}
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+
+/* ここから記入 */
+body{
+	width:960px;
+	margin:0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.main_img{
+    background: url(../img/cheesecakeshop.png);
+    width: 960px;
+    height: 300px;
+}
+
+.anime_test {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  relative;            /* 位置指定 */
+    animation: anime1 1s ease; 
+    padding-top: 50px;    /* アニメーション指定 */
+}
+
+@keyframes anime1 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 50px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
+}
+
+.index{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.start img{
+    background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* height: 100%; */
+	width: 100%;
+    z-index: 9000;
+
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+.menu{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wrap{
+    background: url(../img/cheeseimg.jpg);
+	height: 450px;
+	background-size: cover;
+	background-position: center;
+    position: relative;
+    padding: 120px;
+
+}
+
+.header_top{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.cheese{
+    display:  block; 
+    margin: 0 auto;               /* ブロック要素              /* 要素中央揃え */
+    position:  relative;            /* 位置指定 */
+    animation: anime1 5s ease;/* アニメーション指定 */
+}
+    
+@keyframes anime1 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 50px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
+}
+
+.about{
+    background-color: #a53b3d;
+    color: azure;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.about h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about h2{
+    padding-bottom: 40px;
+}
+
+.text{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.text1{
+    padding-top: 15px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.head_text{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+}
+
+.item_img{
+    width: 25vw;
+    max-width: 200px;
+    margin-top:120px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+}
+
+.item_img2{
+    display: block;
+    margin: auto;
+}
+
+.menu_menu{
+    display: block;
+    width: 40%;
+    margin-left: 170px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+}
+
+.menu2{
+    color: #3AAEB5;
+    font-size: 24px;
+    padding-left: 180px;
+}
+
+.menu3{
+    padding-left: 180px;
+}
+
+.price{
+    padding-left: 180px;
+    font-size: 30px;
+}
+
+a.button1 {
+    text-align: center;
+  display: block;
+  margin:0 auto;
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  background: #555;
+  font-weight: bold;
+  position: relative;
+  height: 3.0em;
+  line-height: 3.0em;
+  width: 300px;
+  padding: 0 0.8em 0 1.2em;
+  transition: 0.5s;
+  margin-top: 40px;
+}
+a.button1::after{
+  transition: 0.5s;
+  content: "";
+  width: .6em;
+  height: .6em;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+a.button1:hover::after{
+  right: 12px;
+}
+a.button1:hover {
+  background: #CC8D29;
+}
+
+
+.day{
+    width: 250px;
+    height: 50px;
+	background-color: #CC8D29;
+	color: azure;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.size{
+    max-width: 640px;
+    height: 415px;
+    display: block;
+    margin: auto;
+    border:  2px solid ;
+    border-color: darkgray;
+    padding:25px;
+    background-color:#F8F5EF;
+    margin-top: 90px;
+}
+
+.size p{
+    padding-top: 15px;
+}
+
+
+.entry{
+	padding-right: 40px;
+    text-align: left;
+    color: #333333;
+}
+
+.entry2{
+	border: solid 1px #bfbfbf;
+	width: 328px;
+	height: 36px;
+    margin: 12px 0px;
+    padding: 8px;
+}
+
+.entry3{
+	padding: 12px 0px;
+	text-align: left;
+}
+
+.entry4{
+	padding: 12px 0px;
+	padding-bottom: 32px;
+	text-align: left;
+}
+
+.input{
+	margin-right: 40px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+label{
+	cursor: pointer;
+}
+
+textarea{
+	border: solid 1px #bfbfbf;
+	width: 328px;
+	height: 124px;
+}
+
+.entry6{
+	text-align: left;
+    vertical-align: middle;
+    color: #333333;
+}
+
+.submit{
+	font-size: 18px;
+	width: 298px;
+	height: 54px;
+	background-color: #CC8D29;
+	color: azure;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.submit1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+	margin-top: 40px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.order_top{
+    background-color: #F8F5EF;
+    margin-top: 100px;
+}
+
+.order{
+    width: 25vw;
+    max-width: 250px;
+    margin-top:-30px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ad{
+    padding: 8px;
+    width: 150px;
+}
+
+.adrs{
+    padding: 8px;
+    width: 250px;
+}
+
+
+
+.item_img2 {
+  transition: filter 0.5s ease;
+  filter: brightness(
+    1
+  ); /* デフォルト値なのでこの一行は省略してもOK */
+}
+
+.item_img2:hover {
+  filter: brightness(1.3); /* 明るくする */
+}
+
+input.btn_cheese {
+  display: none;
+}
+input.btn_cheese + label {
+  display: block;
+  font-size: 18px;
+  padding-left: 1.6em;
+  position: relative;
+  color: #888;
+}
+input.btn_cheese + label:before {
+  content: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.5px"\a   height="18.4px" viewBox="0 0 19.5 18.4" style="enable-background:new 0 0 19.5 18.4;" xml:space="preserve">\a        <style type="text/css">\a  .st0{fill:%23888888;}\a        </style>\a        <defs>\a        </defs>\a        <path class="st0" d="M6.4,13.4c0,0.1,0.1,0.2,0.1,0.3c0.4,0.8,1.4,1,2.2,0.6c0.8-0.4,1-1.4,0.6-2.2c-0.4-0.8-1.4-1-2.2-0.6\a  c-0.2,0.1-0.4,0.3-0.5,0.4c-0.1,0.1-0.1,0.3,0,0.4c0.1,0.1,0.3,0.1,0.4,0c0.1-0.1,0.2-0.2,0.3-0.3c0.5-0.3,1.2-0.1,1.5,0.4\a  s0.1,1.2-0.4,1.5c-0.5,0.3-1.2,0.1-1.5-0.4c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.2-0.2-0.3-0.2C6.4,13.2,6.3,13.3,6.4,13.4z"/>\a        <path class="st0" d="M11.2,7.1c0,0.1,0.1,0.2,0.1,0.3c0.4,0.8,1.4,1,2.2,0.6c0.8-0.4,1-1.4,0.6-2.2s-1.4-1-2.2-0.6\a  c-0.2,0.1-0.4,0.3-0.5,0.4c-0.1,0.1-0.1,0.3,0,0.4c0.1,0.1,0.3,0.1,0.4,0c0.1-0.1,0.2-0.2,0.3-0.3c0.5-0.3,1.2-0.1,1.5,0.4\a  c0.3,0.5,0.1,1.2-0.4,1.5c-0.5,0.3-1.2,0.1-1.5-0.4c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.2-0.2-0.3-0.2C11.2,6.8,11.1,6.9,11.2,7.1z"/>\a        <path class="st0" d="M8,9.2c0.5-0.3,0.7-0.9,0.4-1.4C8.1,7.2,7.4,7,6.9,7.3C6.8,7.4,6.8,7.6,6.8,7.7C6.9,7.8,7,7.8,7.2,7.8\a  C7.4,7.6,7.8,7.7,7.9,8C8.1,8.3,8,8.6,7.7,8.7S7.1,8.8,7,8.5C6.9,8.4,6.7,8.4,6.6,8.4C6.5,8.5,6.4,8.7,6.5,8.8\a  C6.8,9.3,7.4,9.5,8,9.2z"/>\a        <path class="st0" d="M3.5,11.1c0.2,0.4,0.7,0.5,1.1,0.3c0.4-0.2,0.5-0.7,0.3-1.1C4.6,9.9,4.2,9.8,3.8,10C3.4,10.2,3.3,10.7,3.5,11.1\a  z M3.9,10.9c-0.1-0.1,0-0.3,0.1-0.4c0.1-0.1,0.3,0,0.4,0.1s0,0.3-0.1,0.4C4.2,11,4,11,3.9,10.9z"/>\a        <path class="st0" d="M15.1,9.8c0.3,0.5,0.9,0.7,1.4,0.4c0.5-0.3,0.7-0.9,0.4-1.4c-0.3-0.5-0.9-0.7-1.4-0.4C15,8.7,14.9,9.3,15.1,9.8\a  z M15.6,9.6c-0.2-0.3-0.1-0.6,0.2-0.8c0.3-0.2,0.6-0.1,0.8,0.2c0.2,0.3,0.1,0.6-0.2,0.8C16.1,10,15.7,9.9,15.6,9.6z"/>\a        <path class="st0" d="M11.4,11c0.2,0.4,0.7,0.5,1.1,0.3c0.4-0.2,0.5-0.7,0.3-1.1c-0.2-0.4-0.7-0.5-1.1-0.3\a  C11.4,10.1,11.2,10.6,11.4,11z M11.9,10.7c-0.1-0.1,0-0.3,0.1-0.4c0.1-0.1,0.3,0,0.4,0.1c0.1,0.1,0,0.3-0.1,0.4\a  C12.1,10.9,12,10.9,11.9,10.7z"/>\a        <path class="st0" d="M3.7,14.3c0.2,0.3,0.1,0.8-0.2,1c-0.2,0.2-0.2,0.4-0.1,0.7l1.2,2.1c0.1,0.3,0.5,0.3,0.7,0.2l6-3.3\a  c0.2-0.1,0.3-0.3,0.3-0.5c-0.1-0.5,0.1-0.9,0.5-1.1s0.9-0.2,1.3,0.1c0.2,0.1,0.4,0.2,0.6,0.1l4.8-2.7c0.6-0.4,0.9-1.2,0.5-1.8\a  l-3.7-6.6c-0.4-0.7-1.4-1.6-2.9-2.1c-1.2-0.4-3.2-0.6-5.8,0.5C6.3,1.1,5.8,1.5,5.5,2L0,9.7l0,0C0,9.7,0,9.8,0,9.9l2.1,3.8\a  C2.3,13.9,2.5,14,2.8,14C3.1,13.8,3.6,14,3.7,14.3z M4.2,14.1c-0.3-0.5-1-0.8-1.6-0.6c0,0,0,0,0,0l-2-3.6l2.1-1.2\a  c0.1-0.1,0.2-0.2,0.1-0.3C2.8,8.2,2.6,8.2,2.5,8.3L1.1,9l4.8-6.7c0.3-0.4,0.7-0.8,1.2-1c2.4-1.1,4.3-0.9,5.4-0.5\a  c0.6,0.2,1.3,0.5,1.8,1c-0.2,0-0.4,0.1-0.5,0.2L3.4,7.7C3.3,7.8,3.3,8,3.3,8.1c0.1,0.1,0.2,0.2,0.3,0.1l10.4-5.8\a  c0.4-0.2,0.9-0.1,1.1,0.3l3.7,6.6c0.2,0.4,0.1,0.9-0.3,1.1l-4.8,2.7c0,0,0,0,0,0c-0.5-0.4-1.2-0.5-1.8-0.2c-0.6,0.3-0.9,1-0.8,1.7\a  c0,0,0,0,0,0l-6,3.3c0,0,0,0,0,0l-1.2-2.1c0,0,0,0,0,0C4.4,15.3,4.5,14.6,4.2,14.1z"/>\a        </svg>\a        \a        ');
+  display: block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+}
+input.btn_cheese:checked + label {
+  color: #333;
+}
+input.btn_cheese:checked + label:before {
+  content: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.5px"\a       height="18.4px" viewBox="0 0 19.5 18.4" style="enable-background:new 0 0 19.5 18.4;" xml:space="preserve">\a  <style type="text/css">\a      .st0{fill:%23FFF082;}\a      .st1{fill:%23FFDC64;}\a      .st2{fill:%23E1A546;}\a      .st3{fill:%23FFC850;}\a      .st4{fill:%239B6618;}\a  </style>\a  <defs>\a  </defs>\a  <path class="st0" d="M0.8,10.7l14.6-8.2C14.7,1.2,11.5-1,7,1.1C6.5,1.3,6,1.7,5.7,2.2L0.3,9.8L0.8,10.7z"/>\a  <path class="st1" d="M4,14.2c0.3,0.5,0.1,1-0.2,1.3c-0.1,0.1-0.1,0.2-0.1,0.3l1.2,2.1c0.1,0.1,0.2,0.2,0.4,0.1l6-3.3\a      c0.1-0.1,0.2-0.2,0.1-0.3c-0.1-0.5,0.2-1.1,0.7-1.4c0.5-0.3,1.1-0.2,1.6,0.2c0.1,0.1,0.2,0.1,0.3,0l4.8-2.7c0.5-0.3,0.7-0.9,0.4-1.5\a      l-3.7-6.6c-0.3-0.5-0.9-0.7-1.5-0.4L0.3,9.8l2.1,3.8c0.1,0.1,0.2,0.2,0.3,0.1C3.2,13.6,3.7,13.8,4,14.2z"/>\a  <g>\a      <circle class="st2" cx="4.2" cy="10.7" r="0.5"/>\a      <circle class="st2" cx="12.1" cy="10.6" r="0.5"/>\a  </g>\a  <circle class="st3" cx="16.1" cy="9.3" r="0.8"/>\a  <path class="st2" d="M15.4,9.7c0.2,0.3,0.5,0.4,0.8,0.4c-0.1-0.1-0.2-0.2-0.2-0.3c-0.2-0.4-0.1-0.9,0.3-1.1c0.1-0.1,0.2-0.1,0.3-0.1\a      c-0.2-0.2-0.6-0.2-0.9-0.1C15.3,8.8,15.1,9.3,15.4,9.7z"/>\a  <circle class="st3" cx="7.4" cy="8.3" r="0.8"/>\a  <path class="st2" d="M6.7,8.7c0.2,0.3,0.5,0.4,0.8,0.4C7.4,9,7.3,8.9,7.3,8.8C7.1,8.4,7.2,7.9,7.6,7.7c0.1-0.1,0.2-0.1,0.3-0.1\a      C7.7,7.4,7.3,7.4,7,7.6C6.7,7.8,6.5,8.3,6.7,8.7z"/>\a  <circle class="st3" cx="12.7" cy="6.6" r="1.4"/>\a  <path class="st2" d="M11.5,7.2c0.3,0.4,0.7,0.7,1.2,0.7c-0.2-0.1-0.3-0.3-0.5-0.5c-0.4-0.7-0.1-1.5,0.5-1.8c0.2-0.1,0.4-0.2,0.6-0.2\a      c-0.4-0.3-0.9-0.3-1.4,0C11.4,5.8,11.1,6.6,11.5,7.2z"/>\a  <circle class="st3" cx="7.9" cy="13" r="1.4"/>\a  <path class="st2" d="M6.7,13.6c0.3,0.4,0.7,0.7,1.2,0.7c-0.2-0.1-0.3-0.3-0.5-0.5C7.1,13.2,7.3,12.3,8,12c0.2-0.1,0.4-0.2,0.6-0.2\a      c-0.4-0.3-0.9-0.3-1.4,0C6.6,12.1,6.4,13,6.7,13.6z"/>\a  <path class="st3" d="M19.1,9.2c0.3,0.5,0.1,1.2-0.4,1.5l-4.6,2.6c-0.2,0.1-0.4,0-0.6-0.2l0,0c-0.1-0.2,0-0.4,0.2-0.6l3.2-1.8\a      c0.8-0.4,1.1-1.4,0.6-2.2l-2.4-4.2c-0.3-0.5-0.1-1.2,0.4-1.5l0,0L19.1,9.2z"/>\a  <path class="st4" d="M6.4,13.4c0,0.1,0.1,0.2,0.1,0.3c0.4,0.8,1.4,1,2.2,0.6c0.8-0.4,1-1.4,0.6-2.2c-0.4-0.8-1.4-1-2.2-0.6\a      c-0.2,0.1-0.4,0.3-0.5,0.4c-0.1,0.1-0.1,0.3,0,0.4c0.1,0.1,0.3,0.1,0.4,0c0.1-0.1,0.2-0.2,0.3-0.3c0.5-0.3,1.2-0.1,1.5,0.4\a      s0.1,1.2-0.4,1.5c-0.5,0.3-1.2,0.1-1.5-0.4c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.2-0.2-0.3-0.2C6.4,13.2,6.3,13.3,6.4,13.4z"/>\a  <path class="st4" d="M11.2,7.1c0,0.1,0.1,0.2,0.1,0.3c0.4,0.8,1.4,1,2.2,0.6c0.8-0.4,1-1.4,0.6-2.2s-1.4-1-2.2-0.6\a      c-0.2,0.1-0.4,0.3-0.5,0.4c-0.1,0.1-0.1,0.3,0,0.4c0.1,0.1,0.3,0.1,0.4,0c0.1-0.1,0.2-0.2,0.3-0.3c0.5-0.3,1.2-0.1,1.5,0.4\a      c0.3,0.5,0.1,1.2-0.4,1.5c-0.5,0.3-1.2,0.1-1.5-0.4c0-0.1-0.1-0.1-0.1-0.2c0-0.1-0.2-0.2-0.3-0.2C11.2,6.8,11.1,6.9,11.2,7.1z"/>\a  <path class="st4" d="M8,9.2c0.5-0.3,0.7-0.9,0.4-1.4C8.1,7.2,7.4,7,6.9,7.3C6.8,7.4,6.8,7.6,6.8,7.7C6.9,7.8,7,7.8,7.2,7.8\a      C7.4,7.6,7.8,7.7,7.9,8C8.1,8.3,8,8.6,7.7,8.7S7.1,8.8,7,8.5C6.9,8.4,6.7,8.4,6.6,8.4C6.5,8.5,6.4,8.7,6.5,8.8\a      C6.8,9.3,7.4,9.5,8,9.2z"/>\a  <path class="st4" d="M3.5,11.1c0.2,0.4,0.7,0.5,1.1,0.3c0.4-0.2,0.5-0.7,0.3-1.1C4.6,9.9,4.2,9.8,3.8,10C3.4,10.2,3.3,10.7,3.5,11.1\a      z M3.9,10.9c-0.1-0.1,0-0.3,0.1-0.4c0.1-0.1,0.3,0,0.4,0.1s0,0.3-0.1,0.4C4.2,11,4,11,3.9,10.9z"/>\a  <path class="st4" d="M15.1,9.8c0.3,0.5,0.9,0.7,1.4,0.4c0.5-0.3,0.7-0.9,0.4-1.4c-0.3-0.5-0.9-0.7-1.4-0.4C15,8.7,14.9,9.3,15.1,9.8\a      z M15.6,9.6c-0.2-0.3-0.1-0.6,0.2-0.8c0.3-0.2,0.6-0.1,0.8,0.2c0.2,0.3,0.1,0.6-0.2,0.8C16.1,10,15.7,9.9,15.6,9.6z"/>\a  <path class="st4" d="M11.4,11c0.2,0.4,0.7,0.5,1.1,0.3c0.4-0.2,0.5-0.7,0.3-1.1c-0.2-0.4-0.7-0.5-1.1-0.3\a      C11.4,10.1,11.2,10.6,11.4,11z M11.9,10.7c-0.1-0.1,0-0.3,0.1-0.4c0.1-0.1,0.3,0,0.4,0.1c0.1,0.1,0,0.3-0.1,0.4\a      C12.1,10.9,12,10.9,11.9,10.7z"/>\a  <path class="st4" d="M3.7,14.3c0.2,0.3,0.1,0.8-0.2,1c-0.2,0.2-0.2,0.4-0.1,0.7l1.2,2.1c0.1,0.3,0.5,0.3,0.7,0.2l6-3.3\a      c0.2-0.1,0.3-0.3,0.3-0.5c-0.1-0.5,0.1-0.9,0.5-1.1s0.9-0.2,1.3,0.1c0.2,0.1,0.4,0.2,0.6,0.1l4.8-2.7c0.6-0.4,0.9-1.2,0.5-1.8\a      l-3.7-6.6c-0.4-0.7-1.4-1.6-2.9-2.1c-1.2-0.4-3.2-0.6-5.8,0.5C6.3,1.1,5.8,1.5,5.5,2L0,9.7l0,0C0,9.7,0,9.8,0,9.9l2.1,3.8\a      C2.3,13.9,2.5,14,2.8,14C3.1,13.8,3.6,14,3.7,14.3z M4.2,14.1c-0.3-0.5-1-0.8-1.6-0.6c0,0,0,0,0,0l-2-3.6l2.1-1.2\a      c0.1-0.1,0.2-0.2,0.1-0.3C2.8,8.2,2.6,8.2,2.5,8.3L1.1,9l4.8-6.7c0.3-0.4,0.7-0.8,1.2-1c2.4-1.1,4.3-0.9,5.4-0.5\a      c0.6,0.2,1.3,0.5,1.8,1c-0.2,0-0.4,0.1-0.5,0.2L3.4,7.7C3.3,7.8,3.3,8,3.3,8.1c0.1,0.1,0.2,0.2,0.3,0.1l10.4-5.8\a      c0.4-0.2,0.9-0.1,1.1,0.3l3.7,6.6c0.2,0.4,0.1,0.9-0.3,1.1l-4.8,2.7c0,0,0,0,0,0c-0.5-0.4-1.2-0.5-1.8-0.2c-0.6,0.3-0.9,1-0.8,1.7\a      c0,0,0,0,0,0l-6,3.3c0,0,0,0,0,0l-1.2-2.1c0,0,0,0,0,0C4.4,15.3,4.5,14.6,4.2,14.1z"/>\a  </svg>\a  ');
+}
+
+.footer{
+    text-align: center;
+}
+
+a.button {
+    text-align: center;
+  display: block;
+  margin:0 auto;
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  background: #555;
+  font-weight: bold;
+  position: relative;
+  height: 3.0em;
+  line-height: 3.0em;
+  width: 220px;
+  padding: 0 0.8em 0 1.2em;
+  transition: 0.5s;
+}
+a.button::after{
+  transition: 0.5s;
+  content: "";
+  width: .6em;
+  height: .6em;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+a.button:hover::after{
+  right: 12px;
+}
+a.button:hover {
+  background: #CC8D29;
+}
+
+.fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+

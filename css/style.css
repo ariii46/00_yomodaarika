@@ -1,0 +1,431 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+body{
+	width:960px;
+	margin:0 auto;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.example{
+	background: url(../img/mainbg.png);
+	width: 960px;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.site-title{
+	display: flex;
+	justify-content: center;
+	color:#ffffff;
+	font-size:48px;
+	text-align: center;
+	margin: 0px;
+}
+
+.header{
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px;
+	border-color: #efefef;	
+}
+
+.header_img{
+	margin-right: 80px;
+}
+.n{
+	margin: 14px;
+}
+
+.site-title2{
+	display: flex;
+	justify-content: center;
+	color:#ffffff;
+	font-size:36px;
+	text-align: center;
+	margin-top: 40px;
+}
+.nav{
+	height:80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 21px;
+	display: flex;
+}
+
+.nav_a{
+	color: #222222;
+}
+
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.index{
+	font-size: 24px;
+	color: #ffd61a;
+	margin-top: 120px;
+}
+
+.out_line{
+	margin-top: 24px;
+}
+
+.out_line2{
+	margin-top: 64px;
+	margin-bottom: 20px;
+}
+
+.out_line3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.out_line4{
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+.about_1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 64px;
+}
+
+.news1{
+	color: #ffd61a;
+	padding-bottom: 20px;
+}
+
+.course{
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 24px;
+}
+
+.content{
+	display: flex;
+}
+
+.img_box_img{
+	width: 50%;
+}
+
+.img_box_text{
+	width: 50%;
+	background-color: #efefef;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 48px;
+}
+
+.text{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.comment{
+	font-size: 14px;
+}
+
+.content_2{
+	display: flex;
+	flex-flow: row-reverse;
+}
+
+.img_box_text_2{
+	width: 50%;
+	background-color: #efefef;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 48px;
+}
+
+.img_box_img_2{
+	width: 50%;
+}
+
+.news{
+	display: flex;
+	justify-content: center;
+}
+
+.news_text{
+	flex-direction: column;
+	padding-left: 16.5px;
+	padding-right: 16.5px;
+}
+
+.news_pic{
+	padding-bottom: 32px;
+}
+
+.news_text_text{
+	padding-bottom: 24px;
+	font-size: 15px;
+}
+
+.news_text_news{
+	font-size: 15px;
+}
+
+.about_2{
+	text-align: center;
+	padding: 64px;
+}
+
+.more1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.more{
+	text-align: center;
+	margin-top: 56px;
+	margin-bottom: 48px;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	background-color: #ffd61a;
+	color: azure;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.co{
+	background-color: #fafafa;
+	text-align: center;
+}
+.access{
+	padding-top: 64px;
+	padding-bottom: 24px;
+}
+
+.access_2{
+	padding-bottom: 64px;
+}
+
+.school{
+	padding-top: 64px;
+}
+/* 
+.address{
+	padding-top: 24px;
+} */
+
+
+.address1{
+	padding-top: 24px;
+	padding-left: 48px;
+}
+
+.address2{
+	padding-top: 24px;
+	padding-left: 48px;
+	padding-bottom: 80px;
+}
+
+.table{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fafafa;
+}
+
+.contact_contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_name{
+	padding: 64px;
+}
+
+.contact_text{
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+.contact_1{
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.contact_2{
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.tbody{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.entry{
+	padding-right: 120px;
+	text-align: left;
+}
+
+.entry2{
+	border: solid 1px #bfbfbf;
+	width: 328px;
+	height: 36px;
+	margin: 12px 0px;
+}
+
+.entry3{
+	padding: 12px 0px;
+	text-align: left;
+}
+
+.entry4{
+	padding: 12px 0px;
+	padding-bottom: 32px;
+	text-align: left;
+}
+
+.input{
+	margin-right: 40px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+label{
+	cursor: pointer;
+}
+
+textarea{
+	border: solid 1px #bfbfbf;
+	width: 328px;
+	height: 108px;
+}
+
+.entry6{
+	text-align: left;
+	vertical-align: top;
+}
+
+.submit{
+	font-size: 18px;
+	width: 298px;
+	height: 54px;
+	background-color: #ffd61a;
+	color: azure;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.submit1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+	margin-top: 40px;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 32px;
+	font-size: 18px;
+	background-color: #707070;
+	padding-top: 32px;
+	color: azure	
+}
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/

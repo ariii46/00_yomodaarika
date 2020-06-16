@@ -1,0 +1,52 @@
+body{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.main_img{
+    background: url(../img/cheesecakeshop.png);
+}
+
+.anime_test {
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  relative;            /* 位置指定 */
+    animation: anime1 1s ease; 
+    padding-top: 50px;    /* アニメーション指定 */
+}
+
+@keyframes anime1 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 50px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
+}
+
+.index{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.start {
+	background: url(../img/cheese.jpg);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+

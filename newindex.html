@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- ここから記入 -->
+<body>
+    <section class="container">
+        <div class="wave"></div>
+    </section>
+    
+        <header class="header_top">
+            <div class="menu">
+                <p>CHEESECAKE SHOP 公式ONLINE STORE</p>
+            </div>
+        </header>
+    <div class="wrap">
+    <figure><img class="cheese" src="../cheese arrenge/img/チーズ.png" alt=""></figure>
+    </div>
+    
+
+    <div class="about">
+        <h1 id="ab">世界一じゃなく、<br>
+        あなたの人生最高に。</h1>
+        <!-- <h2 class="out_line">CHEESECAKESHOPについて</h2> -->
+        <p class="text">濃厚なのにスッと溶ける。</p>
+        <p class="text">おいしい記憶をたどり、</p>
+        <p class="text">シェフだからこその味わいを生み出す。</p>
+        <p class="text1">世界へ誇るチーズケーキを。</p>
+    </div>
+
+    <div>
+    <img class="item_img" src="img/リピートグリッド 103.png" alt="ITEM">
+    </div>
+
+    <img class="item_img2" src="img/2323035_s.jpg" alt="ITEM">
+
+    <div>
+    <h1 class="menu_menu">YOMO's CHEESECAKE</h1>
+    <h2 class="menu2">with cooler Bag</h2>
+    <p class="menu3">ケーキと保冷袋がセットになった商品です。</p>
+    </div>
+
+    <div>
+    <p class="price">¥3,456</p>
+    <a href="#form" class="button1">注文フォーム</a>
+    </div>
+
+    <div class="size">
+    <h3>サイズ</h3>
+        <p>約17cm/1本</p>
+    <h3>ケーキについて</h3>
+        <p>食感に特にこだわり、とても柔らかいため冷凍でのお届けとなります。ご了承下さい。
+        側面にバニラの粒が表立つとカビのように見えることがありますが、
+        焼いた後は冷凍庫保管し、カビが生える条件下には置いておりません。ご安心ください。
+        </p>
+    <h3>原材料</h3>
+        <p>クリームチーズ、サワークリーム、ヨーグルト、生クリーム、ホワイトチョコレート、
+            グラニュー糖、卵黄、レモン汁、バニラ、トンカ豆、コーンスターチ、乳化剤（一部に卵、乳、大豆を含む）</p>
+    </div>
+
+    <div id="form"></div>
+    
+    <div class="order_top">
+    <img class="order" src="img/ORDER.png" alt="">
+
+        <form class="form" action="" method="POST">
+            <div>
+                <table>
+                    <tr>
+                        <th class="entry">注文個数<br>(お一人様3個まで)</th>
+                    <td><input class="btn_cheese" id="radio_cheese_1" type="radio" name="radio">
+                    <label for="radio_cheese_1">1個</label>
+                    <input class="btn_cheese" id="radio_cheese_2" type="radio" name="radio">
+                    <label for="radio_cheese_2">2個</label>
+                    <input class="btn_cheese" id="radio_cheese_3" type="radio" name="radio">
+                    <label for="radio_cheese_3">3個</label>
+                    </td>
+                    </tr>
+
+                        <tr>
+                        <th class="entry">名前</th>
+                        <td><input class="entry2" placeholder="山田　太郎" type="text" name="name" value=""></td>
+                    </tr>
+                    <tr>
+                        <th class="entry">住所</th>
+                        <td class="address">
+                            <!-- ▼郵便番号入力フィールド(7桁) -->
+                            <input class="ad" placeholder="1234567（ハイフン不要）" type="text" name="zip01" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');">
+                            <!-- ▼住所入力フィールド(都道府県) -->
+                            <input class="ad" placeholder="〇〇県" type="text" name="pref01" size="20">
+                            <!-- ▼住所入力フィールド(都道府県以降の住所) -->
+                            <input class="adrs" placeholder="〇〇市〇〇町1−2−3" type="text" name="addr01" size="60">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="entry">メールアドレス</th>
+                        <td><input class="entry2" placeholder="test@test.com" type="text" name="email" value=""></td>
+                    </tr>
+
+                    <tr>
+                    <th class="entry">電話番号</th>
+                    <td><input class="entry2" placeholder="080********(ハイフン不要)" type="text" name="tel" value=""></td>
+                    </tr>
+
+                    <tr>
+                        <th></th>
+                        
+                    </tr>
+
+                    <tr>
+                        <th class="entry6">備考</th>
+                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+    
+                </table>
+                <div class="submit1">
+                    <a href="#" class="button">注文する</a>
+                </div>
+
+                
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>copyrights 2016-2018 Cheeese Academy Fukuoka All RIghts Reserved.</p>
+    </footer>
+
+<script>
+$(function(){
+$(window).scroll(function (){
+$('.fadein').each(function(){
+var targetElement = $(this).offset().top;
+var scroll = $(window).scrollTop();
+var windowHeight = $(window).height();
+if (scroll > targetElement - windowHeight + 200){
+$(this).css('opacity','1');
+$(this).css('transform','translateY(0)');
+}
+});
+});
+});
+</script>
+
+</body>
+</html>
